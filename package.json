@@ -1,7 +1,9 @@
 {
-  "name": "node-app-template",
-  "version": "0.0.1",
-  "description": "",
+  "name": "prisma-presentation",
+  "description": "A app to show off features of prisma connected to a postgresql database",
+  "private": true,
+  "keywords": ["prisma", "postgresql"],
+  "author": "Marcus Hellams",
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
     "prebuild": "rimraf build",
@@ -28,9 +30,6 @@
     "studio": "prisma studio",
     "deleteAll": "ts-node utils/deleteAll.ts"
   },
-  "keywords": [],
-  "author": "Marcus Hellams",
-  "license": "ISC",
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
     "@types/fs-extra": "^11.0.1",
