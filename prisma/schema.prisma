@@ -35,6 +35,7 @@ model Role {
   users       RolesOnUsers[]
 }
 
+// defining an explicit many to many relation
 model RolesOnUsers {
   id     String @id @default(uuid())
   role   Role   @relation(fields: [roleId], references: [id],onDelete: Cascade, onUpdate: Cascade)
