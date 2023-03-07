@@ -44,3 +44,5 @@ User the up and down arrow keys to choose which action you would like to take an
 
 See the following file for the code that the above commands run:
 *src/users.ts*
+
+Also see the following file to see how a prisma schema is modeled: *prisma/schema.prisma*
