@@ -59,6 +59,16 @@ export const updateUser = async () => {
           },
         },
       },
+      /*
+        Sample if we wanted to update a role by an explicit relation
+      roles: {
+        update: {
+          where: { userId_roleId: { userId: '' , roleId: ''} },
+          data: {
+            role: { update: { title: '' } },
+          },
+        },
+      }, */
     },
     include: {
       books: {
