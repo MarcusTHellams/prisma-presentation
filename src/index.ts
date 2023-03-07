@@ -7,6 +7,7 @@ enum Answers {
   UPDATE_USER = 'Update User',
   DELETE_USER = 'Delete User',
   ADD_USER = 'Add User',
+  END = 'End',
 }
 
 const main = async () => {
@@ -20,6 +21,7 @@ const main = async () => {
         Answers.UPDATE_USER,
         Answers.ADD_USER,
         Answers.DELETE_USER,
+        Answers.END,
       ],
     },
   ]);
@@ -37,8 +39,8 @@ const main = async () => {
     case Answers.ADD_USER:
       await user.addUserWithBookAndRole();
       break;
-    default:
-      break;
+    case Answers.END:
+      process.exit(0);
   }
   main();
 };

@@ -85,7 +85,9 @@ export const deleteUser = async () => {
     },
     include: {
       books: true,
-      roles: true,
+      roles: {
+        include: { role: true },
+      },
     },
   });
   console.log(
