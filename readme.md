@@ -4,11 +4,15 @@
 
 To get started in your terminal navigate to the prisma-presentation folder wherever you downloaed it and run:
 
-`yarn install`
+`yarn`
 
 Next you need to copy the .*env.template* file and rename it to *.env*
 
 You will need to update the *DATABASE_URL* field to a value provided to you by Marcus which is a cloud based postgresql database.
+
+Next run:
+
+`yarn prisma:generate`
 
 In another terminal run
 

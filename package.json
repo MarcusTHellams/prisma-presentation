@@ -20,6 +20,7 @@
     "test:coverage": "vitest --watch=false --silent --coverage --reporter=verbose",
     "prepare": "husky install",
     "prisma:int": "prisma init",
+    "prisma:generate": "prisma generate",
     "seed:users": "ts-node seeding/user.ts",
     "seed:roles": "ts-node seeding/role.ts",
     "seed:books": "ts-node seeding/book.ts",
